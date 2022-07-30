@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "lostworld:fiber"
+    }
+  },
+  "result": {
+    "item": "lostworld:bandage"
+  }
+}
