@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.faxu.lostworld.LostWorld;
 import net.faxu.lostworld.item.custom.DiceItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -15,10 +16,11 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
     public static final Item LOSTBOT = registerItem("lostbot",
             new Item(new FabricItemSettings()));
-    public static final Item FLINT_KNIFE = registerItem("flint_knife",
-            new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
     public static final Item DICE = registerItem("dice",
             new DiceItem(new FabricItemSettings().group(ModItemGroup.LOSTWORLD).maxCount(1)));
+    public static final Item FLINT_KNIFE = registerItem("flint_knife",
+            new SwordItem(ModToolMaterials.FLINT, 1, -1.4f,
+                    new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
 
     private static Item registerItem (String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(LostWorld.MOD_ID, name), item);

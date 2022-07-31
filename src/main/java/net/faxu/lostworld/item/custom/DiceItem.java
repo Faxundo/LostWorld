@@ -32,9 +32,9 @@ public class DiceItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.literal("Right Click to get a random number!").formatted(Formatting.BLUE));
+            tooltip.add(Text.translatable("item.lostworld.dice").formatted(Formatting.GREEN));
         } else {
-            tooltip.add(Text.literal("Press Shift for more information!").formatted(Formatting.AQUA));
+            tooltip.add(Text.translatable("item.lostworld.shift").formatted(Formatting.BOLD).formatted(Formatting.GOLD));
         }
         super.appendTooltip(stack, world, tooltip, context);
     }

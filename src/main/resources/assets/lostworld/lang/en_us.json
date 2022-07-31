@@ -6,5 +6,8 @@
 
   "block.lostworld.tin_block": "Block of Tin",
 
-  "itemGroup.lostworld.lostbot": "Lost World"
+  "itemGroup.lostworld.lost_world": "Lost World",
+
+  "item.lostworld.shift": "Press Shift to get more info!",
+  "item.lostworld.dice": "Right Click for obtain a random number"
 }

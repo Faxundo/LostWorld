@@ -7,6 +7,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-    public static final ItemGroup LOSTWORLD = FabricItemGroupBuilder.build(
-            new Identifier(LostWorld.MOD_ID, "lost_world"), () -> new ItemStack(ModItems.LOSTBOT));
+    public static final ItemGroup LOSTWORLD = FabricItemGroupBuilder.create(
+            new Identifier(LostWorld.MOD_ID, "lost_world"))
+            .icon(() -> new ItemStack(ModItems.LOSTBOT))
+            .appendItems(stacks -> {
+                stacks.add(0, new ItemStack(ModItems.FIBER));
+                stacks.add(1, new ItemStack(ModItems.BANDAGE));
+                stacks.add(2, new ItemStack(ModItems.FLINT_KNIFE));
+                stacks.add(3, new ItemStack(ModItems.DICE));
+            })
+            .build();
 }
