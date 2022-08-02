@@ -8,9 +8,12 @@ import net.minecraft.util.Lazy;
 
 import java.util.function.Supplier;
 
+//Object implements ToolMaterial interfaz
 public enum ModToolMaterials implements ToolMaterial {
+    //New ToolMaterials
     FLINT(MiningLevels.WOOD, 30, 1.8f, 0.0f, 10, () -> Ingredient.ofItems(Items.FLINT));
 
+    //Attributes
     private final int miningLevel;
     private final int itemDurability;
     private final float miningSpeed;
@@ -18,6 +21,7 @@ public enum ModToolMaterials implements ToolMaterial {
     private final int enchantability;
     private final Lazy<Ingredient> repairIngredient;
 
+    //Constructor
     ModToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
@@ -27,6 +31,7 @@ public enum ModToolMaterials implements ToolMaterial {
         this.repairIngredient = new Lazy<Ingredient>(repairIngredient);
     }
 
+    //Getter
     @Override
     public int getDurability() {
         return this.itemDurability;

@@ -15,33 +15,36 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
+//New object item
 public class DiceItem extends Item {
     public DiceItem(Settings settings) {
         super(settings);
     }
 
+    //Functionality
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        if(!world.isClient() && hand == Hand.MAIN_HAND){
+        if (!world.isClient() && hand == Hand.MAIN_HAND) {
             outputRandomNumber(user);
             user.getItemCooldownManager().set(this, 20);
         }
         return super.use(world, user, hand);
     }
-
+    //Method for text lore
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("item.lostworld.dice").formatted(Formatting.GREEN));
         } else {
-            tooltip.add(Text.translatable("item.lostworld.shift").formatted(Formatting.BOLD).formatted(Formatting.GOLD));
+            tooltip.add(Text.translatable("item.lostworld.shift"));
         }
         super.appendTooltip(stack, world, tooltip, context);
     }
-
+    //Method for show numbfer
     private void outputRandomNumber(PlayerEntity player) {
         player.sendMessage(Text.literal("Your Number is " + getRandomNumber()));
     }
+    //Method for generate random number
     private int getRandomNumber() {
         return Random.createLocal().nextInt(6);
     }

@@ -3,11 +3,21 @@
   "item.lostworld.bandage": "Bandage",
   "item.lostworld.flint_knife": "Flint Knife",
   "item.lostworld.dice": "Dice",
+  "item.lostworld.ration": "Ration",
+  "item.lostworld.flint_knife_poisoned": "Flint Knife §2(§aPosioned§2)",
+  "item.lostworld.poison_bottle": "Poison Bottle",
+  "item.losworld.copper_helmet": "Copper Helmet",
+  "item.losworld.copper_chestplate": "Copper Chestplate",
+  "item.losworld.copper_leggings": "Copper Leggings",
+  "item.losworld.copper_boots": "Copper Boots",
 
   "block.lostworld.tin_block": "Block of Tin",
 
   "itemGroup.lostworld.lost_world": "Lost World",
 
-  "item.lostworld.shift": "Press Shift to get more info!",
-  "item.lostworld.dice": "Right Click for obtain a random number"
+  "item.lostworld.shift": "§6Press §6§lShift §6to get more info!",
+  "item.lostworld.dice": "Right Click for obtain a random number.",
+  "item.lostworld.poison": "§eUse it in the Crafting Table with a weapon to poison her.",
+  "item.lostworld.poison_effect": "§1Poison (0:30)",
+  "item.lostworld.knife": "§eHit Sugar Cane for obtain Fiber."
 }

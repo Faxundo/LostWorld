@@ -13,20 +13,21 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
+    //Create new Blocks
     public static final Block TIN_BLOCK = registerBlock("tin_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.LOSTWORLD);
 
-
+    //Register new Block
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);
         return Registry.register(Registry.BLOCK, new Identifier(LostWorld.MOD_ID, name), block);
     }
-
+    //Register Block like item
     private static Item registerBlockItem(String name, Block block, ItemGroup tab) {
         return Registry.register(Registry.ITEM, new Identifier(LostWorld.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings().group(tab)));
     }
-
+    //Message for debug view
     public static void registerModBlocks() {
         LostWorld.LOGGER.debug("Registering ModBlocks for " + LostWorld.MOD_ID);
     }
