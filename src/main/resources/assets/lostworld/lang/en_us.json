@@ -6,18 +6,28 @@
   "item.lostworld.ration": "Ration",
   "item.lostworld.flint_knife_poisoned": "Flint Knife §2(§aPosioned§2)",
   "item.lostworld.poison_bottle": "Poison Bottle",
-  "item.losworld.copper_helmet": "Copper Helmet",
-  "item.losworld.copper_chestplate": "Copper Chestplate",
-  "item.losworld.copper_leggings": "Copper Leggings",
-  "item.losworld.copper_boots": "Copper Boots",
+  "item.lostworld.copper_helmet": "Copper Helmet",
+  "item.lostworld.copper_chestplate": "Copper Chestplate",
+  "item.lostworld.copper_leggings": "Copper Leggings",
+  "item.lostworld.copper_boots": "Copper Boots",
+  "item.lostworld.butcher_knife": "Butcher Knife",
+  "item.lostworld.salt": "Salt",
+  "item.lostworld.tin": "Tin",
+  "item.lostworld.dried_meat": "Dried Meat",
 
   "block.lostworld.tin_block": "Block of Tin",
+  "block.lostworld.salt_block": "Salt Block",
+  "block.lostworld.tin_ore": "Tin Ore",
+  "block.lostworld.tin_ore_deepslate": "Deepslate Tin Ore",
 
   "itemGroup.lostworld.lost_world": "Lost World",
+  "effect.lostworld.bleeding": "Bleeding",
 
   "item.lostworld.shift": "§6Press §6§lShift §6to get more info!",
-  "item.lostworld.dice": "Right Click for obtain a random number.",
+  "item.lostworld.dice_info": "Right Click for obtain a random number.",
   "item.lostworld.poison": "§eUse it in the Crafting Table with a weapon to poison her.",
-  "item.lostworld.poison_effect": "§1Poison (0:30)",
-  "item.lostworld.knife": "§eHit Sugar Cane for obtain Fiber."
+  "item.lostworld.knife": "§eHit Sugar Cane for obtain Fiber.",
+  "item.lostworld.bandage_text": "§eHeal: 2 Hearths.",
+  "item.lostworld.bandage_text2": "§3Cooldown: 3,5 seconds",
+  "item.lostworld.butcher_knife_text": "§eHit to give §9Bleeding (0:10)"
 }

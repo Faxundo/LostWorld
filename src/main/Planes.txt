@@ -1,0 +1,9 @@
+Problema: Al romper caña de azúcar con el cuchillo, suelta caña de azúcar.
+Problema: Expandir las particulas de bleending
+
+Agregar salt a la generacion
+Tirachinas: Usa piedra como munición
+Efecto: Stun (junta 3 cargas, quedas quieto)
+Garrote: Stun
+
+

@@ -2,6 +2,7 @@ package net.faxu.lostworld.item;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.faxu.lostworld.LostWorld;
+import net.faxu.lostworld.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -18,7 +19,15 @@ public class ModItemGroup {
                 stacks.add(3, new ItemStack(ModItems.FLINT_KNIFE));
                 stacks.add(4, new ItemStack(ModItems.POISON_BOTTLE));
                 stacks.add(5, new ItemStack(ModItems.FLINT_KNIFE_POISONED));
-                stacks.add(6, new ItemStack(ModItems.DICE));
+                stacks.add(6, new ItemStack(ModItems.BUTCHER_KNIFE));
+                stacks.add(7, new ItemStack(ModItems.DICE));
+                stacks.add(7, new ItemStack(ModItems.SALT));
+                stacks.add(9, new ItemStack(ModBlocks.SALT_BLOCK));
+                stacks.add(10, new ItemStack(ModBlocks.TIN_ORE));
+                stacks.add(11, new ItemStack(ModBlocks.TIN_BLOCK));
+                stacks.add(12, new ItemStack(ModBlocks.TIN_ORE_DEEPSLATE));
+                stacks.add(13, new ItemStack(ModItems.TIN));
+                stacks.add(14, new ItemStack(ModItems.DRIED_MEAT));
             })
             .build();
 }

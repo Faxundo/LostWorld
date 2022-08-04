@@ -6,18 +6,29 @@
   "item.lostworld.ration": "Ración",
   "item.lostworld.flint_knife_poisoned": "Cuchillo de Sílex §2(§aEnvenenado§2)",
   "item.lostworld.poison_bottle": "Botella de Veneno",
-  "item.losworld.copper_helmet": "Casco de Cobre",
-  "item.losworld.copper_chestplate": "Peto de Cobre",
-  "item.losworld.copper_leggings": "Perneras de Cobre",
-  "item.losworld.copper_boots": "Botas de Cobre",
+  "item.lostworld.copper_helmet": "Casco de Cobre",
+  "item.lostworld.copper_chestplate": "Peto de Cobre",
+  "item.lostworld.copper_leggings": "Perneras de Cobre",
+  "item.lostworld.copper_boots": "Botas de Cobre",
+  "item.lostworld.butcher_knife": "Cuchillo de Carnicero",
+  "item.lostworld.salt": "Sal",
+  "item.lostworld.tin": "Estaño",
+  "item.lostworld.dried_meat": "Carne Seca",
 
   "block.lostworld.tin_block": "Bloque de Estaño",
+  "block.lostworld.tin_ore": "Mena de Estaño",
+  "block.lostworld.tin_ore_deepslate": "Mena de Estaño de Pizarra Profunda",
+  "block.lostworld.salt_block": "Bloque de Sal",
+
 
   "itemGroup.lostworld.lost_world": "Lost World",
+  "effect.lostworld.bleeding": "Sangrado",
 
   "item.lostworld.shift": "§6¡Presiona §6§lShift §6para más información!",
-  "item.lostworld.dice": "§eClick Derecho para generar un número aleatorio.",
+  "item.lostworld.dice_info": "§eClick Derecho para generar un número aleatorio.",
   "item.lostworld.poison": "§eUsalo en la mesa de trabajo para envenenar un arma.",
-  "item.lostworld.poison_effect": "§1Veneno (0:30)",
-  "item.lostworld.knife": "§eGolpea la Caña de Azúcar para obtener Fibra."
+  "item.lostworld.knife": "§eGolpea la Caña de Azúcar para obtener Fibra.",
+  "item.lostworld.bandage_text": "§eSanación: 2 Corazones.",
+  "item.lostworld.bandage_text2": "§eEnfriamiento: 3,5 segundos.",
+  "item.lostworld.butcher_knife_text": "§eAl golpear da §9Sangrado (0:10)"
 }

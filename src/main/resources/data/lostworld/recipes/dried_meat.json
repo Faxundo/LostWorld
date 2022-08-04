@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "/#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "/": {
+      "item": "lost_world:salt"
+    }
+  },
+  "result": {
+    "item": "lostworld:dried_meat"
+  }
+}

@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "lostworld:tin_block",
     "lostworld:tin_ore",
     "lostworld:tin_ore_deepslate"
   ]
