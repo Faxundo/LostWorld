@@ -11,7 +11,10 @@ import java.util.function.Supplier;
 //Object implements ToolMaterial interfaz
 public enum ModToolMaterials implements ToolMaterial {
     //New ToolMaterials
-    FLINT(MiningLevels.WOOD, 30, 1.8f, 0.0f, 10, () -> Ingredient.ofItems(Items.FLINT));
+    FLINT(MiningLevels.WOOD, 30, 1.8f, 0.0f, 10,
+            () -> Ingredient.ofItems(Items.FLINT)),
+    BONE(MiningLevels.STONE, 111, 3.0f, 0.0f, 15,
+            () -> Ingredient.ofItems(Items.BONE));
 
     //Attributes
     private final int miningLevel;

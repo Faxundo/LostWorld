@@ -28,6 +28,12 @@ public class ModItemGroup {
                 stacks.add(12, new ItemStack(ModBlocks.TIN_ORE_DEEPSLATE));
                 stacks.add(13, new ItemStack(ModItems.TIN));
                 stacks.add(14, new ItemStack(ModItems.DRIED_MEAT));
+                stacks.add(15, new ItemStack(ModItems.COPPER_HELMET));
+                stacks.add(16, new ItemStack(ModItems.COPPER_CHESTPLATE));
+                stacks.add(17, new ItemStack(ModItems.COPPER_LEGGINGS));
+                stacks.add(18, new ItemStack(ModItems.COPPER_BOOTS));
+                stacks.add(19, new ItemStack(ModItems.WOOD_CLUB));
+                stacks.add(20, new ItemStack(ModItems.BONE_CLUB));
             })
             .build();
 }

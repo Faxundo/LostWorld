@@ -40,9 +40,9 @@ public class DiceItem extends Item {
         }
         super.appendTooltip(stack, world, tooltip, context);
     }
-    //Method for show numbfer
+    //Method for show number
     private void outputRandomNumber(PlayerEntity player) {
-        player.sendMessage(Text.literal("Your Number is " + getRandomNumber()));
+        player.sendMessage(Text.translatable("item.lostworld.dice_text" + getRandomNumber()));
     }
     //Method for generate random number
     private int getRandomNumber() {

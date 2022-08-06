@@ -4,17 +4,17 @@
   "version": "${version}",
 
   "name": "Lost World",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Mod with ambientation post-apocalyptic.",
   "authors": [
     "Faxu"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/Faxundo/LostWorld"
   },
 
-  "license": "MIT License",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/lostworld/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -23,6 +23,9 @@
     ],
     "client": [
       "net.faxu.lostworld.LostWorldClient"
+    ],
+    "modmenu": [
+      "net.faxu.lostworld.config.ModMenuIntegration"
     ]
   },
   "mixins": [
@@ -37,5 +40,17 @@
   },
   "suggests": {
     "another-mod": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "badges": [],
+      "parent": {
+        "id": "lostworld",
+        "name": "Lost World",
+        "description": "Mod with ambientation post-apocalyptic.",
+        "icon": "assets/lostworld/icon.png",
+        "badges": []
+      }
+    }
   }
 }

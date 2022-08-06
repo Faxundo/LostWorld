@@ -3,6 +3,7 @@ package net.faxu.lostworld;
 import net.fabricmc.api.ModInitializer;
 import net.faxu.lostworld.block.ModBlocks;
 import net.faxu.lostworld.effect.ModEffects;
+import net.faxu.lostworld.enchantment.ModEnchantments;
 import net.faxu.lostworld.item.ModItems;
 import net.faxu.lostworld.particle.ModParticles;
 import net.faxu.lostworld.util.ModLootTableModifiers;
@@ -20,5 +21,6 @@ public class LostWorld implements ModInitializer {
 		ModLootTableModifiers.modifyLootTables();
 		ModEffects.registerEffects();
 		ModParticles.registerParticles();
+		ModEnchantments.registerModEnchantments();
 	}
 }

@@ -25,10 +25,10 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.SOIL).strength(0.5f).sounds(BlockSoundGroup.SAND)), ModItemGroup.LOSTWORLD);
     public static final Block TIN_ORE = registerBlock("tin_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool(),
-            UniformIntProvider.create(1, 3)), ModItemGroup.LOSTWORLD);
+            UniformIntProvider.create(0, 2)), ModItemGroup.LOSTWORLD);
     public static final Block TIN_ORE_DEEPSLATE = registerBlock("tin_ore_deepslate",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
-                    UniformIntProvider.create(1, 3)), ModItemGroup.LOSTWORLD);
+                    UniformIntProvider.create(0, 2)), ModItemGroup.LOSTWORLD);
 
 
     //Register new Block

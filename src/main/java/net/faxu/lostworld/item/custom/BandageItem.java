@@ -1,5 +1,6 @@
 package net.faxu.lostworld.item.custom;
 
+import net.faxu.lostworld.effect.ModEffects;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -26,17 +27,20 @@ public class BandageItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack stack = user.getStackInHand(hand);
         if (!world.isClient() && hand == Hand.MAIN_HAND) {
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, 0), user);
+            user.heal(4.0f);
             user.getItemCooldownManager().set(this, 70);
             stack.decrement(1);
+            if (user.hasStatusEffect(ModEffects.BLEED)) {
+                user.removeStatusEffect(ModEffects.BLEED);
+            }
         }
         return super.use(world, user, hand);
     }
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("item.lostworld.bandage_text").formatted(Formatting.GREEN));
-        tooltip.add(Text.translatable("item.lostworld.bandage_text2").formatted(Formatting.GREEN));
+        tooltip.add(Text.translatable("item.lostworld.bandage_text"));
+        tooltip.add(Text.translatable("item.lostworld.bandage_text2"));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

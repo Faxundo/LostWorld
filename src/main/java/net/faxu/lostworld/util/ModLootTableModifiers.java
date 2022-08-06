@@ -1,5 +1,6 @@
 package net.faxu.lostworld.util;
 
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerChunkEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.faxu.lostworld.item.ModItems;
 import net.minecraft.loot.LootPool;
