@@ -34,6 +34,13 @@ public class ModItemGroup {
                 stacks.add(18, new ItemStack(ModItems.COPPER_BOOTS));
                 stacks.add(19, new ItemStack(ModItems.WOOD_CLUB));
                 stacks.add(20, new ItemStack(ModItems.BONE_CLUB));
+                stacks.add(21, new ItemStack(ModItems.TIN_INGOT));
+                stacks.add(22, new ItemStack(ModItems.BRONZE_INGOT));
+                stacks.add(23, new ItemStack(ModItems.STEEL_INGOT));
+                stacks.add(24, new ItemStack(ModItems.BITTER_ROOT));
+                stacks.add(25, new ItemStack(ModItems.BITTER_ROOT_SEEDS));
+                stacks.add(26, new ItemStack(ModItems.WILD_BOAR_SPAWN_EGG));
+                stacks.add(27, new ItemStack(ModItems.BOAR_TUSK));
             })
             .build();
 }

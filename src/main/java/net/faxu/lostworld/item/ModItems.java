@@ -2,6 +2,8 @@ package net.faxu.lostworld.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.faxu.lostworld.LostWorld;
+import net.faxu.lostworld.block.ModBlocks;
+import net.faxu.lostworld.entity.ModEntities;
 import net.faxu.lostworld.item.custom.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
@@ -21,11 +23,24 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
     public static final Item TIN = registerItem("tin",
             new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
+    public static final Item TIN_INGOT = registerItem("tin_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
+    public static final Item BRONZE_INGOT = registerItem("bronze_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
+    public static final Item STEEL_INGOT = registerItem("steel_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
+    public static final Item BOAR_TUSK = registerItem("boar_tusk",
+            new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
     //FOOD
     public static final Item RATION = registerItem("ration",
             new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD).food(ModFoodComponents.RATION)));
     public static final Item DRIED_MEAT = registerItem("dried_meat",
             new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD).food(ModFoodComponents.DRIED_MEAT)));
+    public static final Item BITTER_ROOT = registerItem("bitter_root",
+            new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD).food(ModFoodComponents.BITTER_ROOT)));
+    //SEEDS
+    public static final Item BITTER_ROOT_SEEDS = registerItem("bitter_root_seeds",
+            new AliasedBlockItem(ModBlocks.BITTER_ROOT_CROP, new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
     //USE
     public static final Item DICE = registerItem("dice",
             new DiceItem(new FabricItemSettings().group(ModItemGroup.LOSTWORLD).maxCount(1)));
@@ -60,6 +75,9 @@ public class ModItems {
     public static final Item COPPER_HELMET = registerItem("copper_helmet",
             new CopperArmorItem(ModArmorMaterials.COPPER, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
+    //SPAWN EGGS
+    public static final Item WILD_BOAR_SPAWN_EGG = registerItem("wild_boar_spawn_egg",
+            new SpawnEggItem(ModEntities.WILD_BOAR, 0xbc9569, 0xffffdd, new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
 
 
     //Register new Item

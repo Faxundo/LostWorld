@@ -1,6 +1,9 @@
 {
   "itemGroup.lostworld.lost_world": "Lost World",
   "text.autoconfig.lostworld.title":"Lost World Config",
+  "text.autoconfig.lostworld.option.activateBleedingEnchantment": "Bleeding Active",
+  "text.autoconfig.lostworld.option.activateCaptureEnchantment": "Capture Active",
+  "text.autoconfig.lostworld.option.activateGuardEnchantment": "Guard Active",
 
   "item.lostworld.fiber": "Fiber",
   "item.lostworld.bandage": "Bandage",
@@ -19,18 +22,28 @@
   "item.lostworld.dried_meat": "Dried Meat",
   "item.lostworld.wood_club": "Wood Club",
   "item.lostworld.bone_club": "Bone Club",
+  "item.lostworld.bitter_root": "Bitter Root",
+  "item.lostworld.bitter_root_seeds": "Bitter Root Seeds",
+  "item.lostworld.tin_ingot": "Tin Ingot",
+  "item.lostworld.bronze_ingot": "Bronze Ingot",
+  "item.lostworld.steel_ingot": "Steel Ingot",
+  "item.lostworld.wild_boar_spawn_egg": "Wild Boar Spawn Egg",
+
 
   "block.lostworld.tin_block": "Block of Tin",
   "block.lostworld.salt_block": "Salt Block",
   "block.lostworld.tin_ore": "Tin Ore",
   "block.lostworld.tin_ore_deepslate": "Deepslate Tin Ore",
+  "block.lostworld.bitter_root_crop": "Bitter Root Crop",
 
   "effect.lostworld.bleed": "Bleed",
   "effect.lostworld.stun": "Stun",
+  "effect.lostworld.satisfaction": "Satisfaction",
 
-  "enchantment.lostworld.massacre": "Massacre",
+  "enchantment.lostworld.guard": "Guard",
   "enchantment.lostworld.capture": "Capture",
   "enchantment.lostworld.bleeding": "Bleeding",
+  "enchantment.lostworld.mighty": "Mighty",
 
   "item.lostworld.shift": "§6Press §6§lShift §6to get more info!",
   "item.lostworld.dice_info": "Right Click for obtain a random number.",

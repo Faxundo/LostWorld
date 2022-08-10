@@ -9,6 +9,7 @@ import net.minecraft.util.registry.Registry;
 public class ModEffects {
     public static StatusEffect BLEED;
     public static StatusEffect STUN;
+    public static StatusEffect SATISFACTION;
 
     public static StatusEffect registerBleed(String name) {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(LostWorld.MOD_ID, name),
@@ -18,11 +19,16 @@ public class ModEffects {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(LostWorld.MOD_ID, name),
                 new StunEffect(StatusEffectCategory.HARMFUL, 251255157));
     }
+    public static StatusEffect registerSatisfaction(String name) {
+        return Registry.register(Registry.STATUS_EFFECT, new Identifier(LostWorld.MOD_ID, name),
+                new SatisfactionEffect(StatusEffectCategory.BENEFICIAL, 164255157));
+    }
 
 
 
     public static void registerEffects(){
         BLEED = registerBleed("bleed");
         STUN = registerStun("stun");
+        SATISFACTION = registerSatisfaction("satisfaction");
     }
 }

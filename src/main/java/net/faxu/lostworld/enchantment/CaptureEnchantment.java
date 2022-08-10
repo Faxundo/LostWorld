@@ -1,5 +1,6 @@
 package net.faxu.lostworld.enchantment;
 
+import net.faxu.lostworld.LostWorld;
 import net.faxu.lostworld.effect.ModEffects;
 import net.faxu.lostworld.item.custom.ClubItem;
 import net.minecraft.enchantment.DamageEnchantment;
@@ -9,7 +10,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.random.Random;
 
@@ -20,12 +20,16 @@ public class CaptureEnchantment extends Enchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 10 * level;
+        return 15 * level;
     }
 
     @Override
     public int getMaxLevel() {
-        return 3;
+        if(LostWorld.CONFIG.activateCaptureEnchantment) {
+            return 3;
+        } else {
+            return 0;
+        }
     }
 
     @Override
@@ -71,6 +75,5 @@ public class CaptureEnchantment extends Enchantment {
                 }
             }
         }
-        super.onTargetDamaged(user, target, level);
     }
 }

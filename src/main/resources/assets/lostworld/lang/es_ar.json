@@ -1,5 +1,9 @@
 {
   "itemGroup.lostworld.lost_world": "Lost World",
+  "text.autoconfig.lostworld.title":"Lost World - Configuración",
+  "text.autoconfig.lostworld.option.activateBleedingEnchantment": "Activar Sangrado",
+  "text.autoconfig.lostworld.option.activateCaptureEnchantment": "Activar Captura",
+  "text.autoconfig.lostworld.option.activateGuardEnchantment": "Activar Guardia",
 
   "item.lostworld.fiber": "Fibra",
   "item.lostworld.bandage": "Vendaje",
@@ -18,18 +22,27 @@
   "item.lostworld.dried_meat": "Carne Seca",
   "item.lostworld.wood_club": "Garrote de Madera",
   "item.lostworld.bone_club": "Garrote de Hueso",
+  "item.lostworld.bitter_root": "Raíz Amarga",
+  "item.lostworld.bitter_root_seeds": "Semillas de Raíz Amarga",
+  "item.lostworld.tin_ingot": "Lingote de Estaño",
+  "item.lostworld.bronze_ingot": "Lingote de Bronce",
+  "item.lostworld.steel_ingot": "Lingote de Acero",
+  "item.lostworld.wild_boar_spawn_egg": "Spawn de Jabalí Salvaje",
 
   "block.lostworld.tin_block": "Bloque de Estaño",
   "block.lostworld.tin_ore": "Mena de Estaño",
   "block.lostworld.tin_ore_deepslate": "Mena de Estaño de Pizarra Profunda",
   "block.lostworld.salt_block": "Bloque de Sal",
+  "block.lostworld.bitter_root_crop": "Cultivo de Raíz Amarga",
 
   "effect.lostworld.bleed": "Sangrar",
   "effect.lostworld.stun": "Aturdir",
+  "effect.lostworld.satisfaction": "Satisfacción",
 
-  "enchantment.lostworld.massacre": "Masacre",
+  "enchantment.lostworld.guard": "Guardia",
   "enchantment.lostworld.capture": "Captura",
   "enchantment.lostworld.bleeding": "Sangrado",
+  "enchantment.lostworld.mighty": "Poderoso",
 
   "item.lostworld.shift": "§6¡Presiona §6§lShift §6para más información!",
   "item.lostworld.dice_info": "§eClick Derecho para generar un número aleatorio.",

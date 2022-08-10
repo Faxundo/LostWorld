@@ -11,11 +11,11 @@ public class StunParticle extends SpriteBillboardParticle {
     protected StunParticle(ClientWorld level, double xCoord, double yCoord, double zCoord,
                                SpriteProvider spriteSet, double xd, double yd, double zd) {
         super(level, xCoord, yCoord, zCoord, xd, yd, zd);
-        this.velocityMultiplier = 0.1F;
+        this.velocityMultiplier = 0.6F;
         this.x = xd;
         this.y = yd;
         this.z = zd;
-        this.scale *= 2.3F;
+        this.scale *= 1.5F;
         this.maxAge = 60;
         this.setSpriteForAge(spriteSet);
         this.red = 1f;
@@ -36,6 +36,11 @@ public class StunParticle extends SpriteBillboardParticle {
     @Override
     public ParticleTextureSheet getType() {
         return ParticleTextureSheet.PARTICLE_SHEET_OPAQUE;
+    }
+
+    @Override
+    public float getSize(float tickDelta) {
+        return this.scale * MathHelper.clamp(((float)this.age + tickDelta) / (float)this.maxAge * 32.0F, 0.0F, 1.0F);
     }
 
     @Environment(EnvType.CLIENT)

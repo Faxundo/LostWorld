@@ -7,5 +7,7 @@ public class ModFoodComponents {
     public static final FoodComponent RATION =
             new FoodComponent.Builder().hunger(10).saturationModifier(0.8f).build();
     public static final FoodComponent DRIED_MEAT =
-            new FoodComponent.Builder().hunger(5).saturationModifier(7).build();
+            new FoodComponent.Builder().hunger(5).saturationModifier(0.4f).build();
+    public static final FoodComponent BITTER_ROOT =
+            new FoodComponent.Builder().hunger(2).saturationModifier(0.3f).build();
 }

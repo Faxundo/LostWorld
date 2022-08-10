@@ -1,15 +1,13 @@
 package net.faxu.lostworld.enchantment;
 
+import net.faxu.lostworld.LostWorld;
 import net.faxu.lostworld.effect.ModEffects;
-import net.faxu.lostworld.enchantment.ModEnchantments;
-import net.minecraft.enchantment.DamageEnchantment;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.random.Random;
 
 public class BleedingEnchantment extends Enchantment {
@@ -19,18 +17,21 @@ public class BleedingEnchantment extends Enchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 10 * level;
+        return 15 * level;
     }
 
     @Override
     public int getMaxLevel() {
-        return 3;
+        if(LostWorld.CONFIG.activateBleedingEnchantment) {
+            return 3;
+        } else {
+            return 0;
+        }
     }
 
     @Override
     public boolean canAccept(Enchantment other) {
-        return super.canAccept(other)
-                && other != ModEnchantments.CAPTURE;
+        return super.canAccept(other) && other != ModEnchantments.CAPTURE;
     }
 
     @Override

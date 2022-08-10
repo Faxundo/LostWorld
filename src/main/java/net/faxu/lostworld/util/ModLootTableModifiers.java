@@ -16,6 +16,8 @@ import net.minecraft.util.Identifier;
 public class ModLootTableModifiers {
     private static final Identifier SUGAR_CANE_ID = new Identifier("minecraft", "blocks/sugar_cane");
     private static final Identifier SPIDER_CAVE_ID = new Identifier("minecraft", "entities/cave_spider");
+    private static final Identifier GRASS_ID = new Identifier("minecraft", "block/grass");
+    private static final Identifier FERN_ID = new Identifier("minecraft", "block/fern");
 
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
@@ -37,6 +39,26 @@ public class ModLootTableModifiers {
                         .conditionally(RandomChanceLootCondition.builder(0.2f))
                         .with(ItemEntry.builder(ModItems.POISON_BOTTLE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+        });
+        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if (GRASS_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.6f))
+                        .with(ItemEntry.builder(ModItems.BITTER_ROOT_SEEDS))
+                        .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+        });
+        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if (FERN_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.6f))
+                        .with(ItemEntry.builder(ModItems.BITTER_ROOT_SEEDS))
+                        .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }
         });

@@ -6,7 +6,6 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.util.math.random.Random;
 
 public class BleedEffect extends StatusEffect {
     protected BleedEffect(StatusEffectCategory statusEffectCategory, int color) {
@@ -18,14 +17,9 @@ public class BleedEffect extends StatusEffect {
         if (!entity.world.isClient()) {
             entity.damage(DamageSource.GENERIC, 1);
         }
-        for (int i = 0; i < 360; i++) {
-            if (i % 20 == 0) {
-                entity.getEntityWorld().addParticle(ModParticles.BLEEDING_PARTICLE,
-                        entity.getPos().x , entity.getPos().y + 2, entity.getPos().z,
-                        Math.cos(i) * 0.25d, 0.15d, Math.sin(i) * 0.25d);
-            }
-        }
-        super.applyUpdateEffect(entity, amplifier);
+        entity.getEntityWorld().addParticle(ModParticles.BLEEDING_PARTICLE,
+                entity.getPos().x , entity.getPos().y + 1.9d, entity.getPos().z,
+                0.25d, 0.15d, 0.25d);
     }
 
     @Override
