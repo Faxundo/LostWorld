@@ -8,6 +8,7 @@ import net.faxu.lostworld.config.LostWorldConfig;
 import net.faxu.lostworld.effect.ModEffects;
 import net.faxu.lostworld.enchantment.ModEnchantments;
 import net.faxu.lostworld.item.ModItems;
+import net.faxu.lostworld.networking.ModMessages;
 import net.faxu.lostworld.particle.ModParticles;
 import net.faxu.lostworld.util.ModLootTableModifiers;
 import net.faxu.lostworld.util.ModRegistries;
@@ -36,6 +37,7 @@ public class LostWorld implements ModInitializer {
 		ModEffects.registerEffects();
 		ModParticles.registerParticles();
 		ModEnchantments.registerModEnchantments();
+		ModMessages.registerC2SPackets();
 
 		GeckoLib.initialize();
 

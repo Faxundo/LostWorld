@@ -3,8 +3,6 @@ package net.faxu.lostworld.item.custom;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.Material;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -12,7 +10,6 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
-import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -37,15 +34,6 @@ public class ClubItem extends ToolItem implements Vanishable {
         return !miner.isCreative();
     }
 
-    public float getMiningSpeedMultiplier(ItemStack stack, BlockState state) {
-        if (state.isOf(Blocks.COBWEB)) {
-            return 15.0F;
-        } else {
-            Material material = state.getMaterial();
-            return material != Material.PLANT && material != Material.REPLACEABLE_PLANT && !state.isIn(BlockTags.LEAVES) && material != Material.GOURD ? 1.0F : 1.5F;
-        }
-    }
-
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         stack.damage(1, attacker, (e) -> {
             e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
@@ -61,10 +49,6 @@ public class ClubItem extends ToolItem implements Vanishable {
         }
 
         return true;
-    }
-
-    public boolean isSuitableFor(BlockState state) {
-        return state.isOf(Blocks.COBWEB);
     }
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(EquipmentSlot slot) {

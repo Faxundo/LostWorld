@@ -1,0 +1,8 @@
+{
+  "name": "Info Pad",
+  "landing_text": "Here has all information of the Lost World Mod",
+  "version": 1,
+  "model": "lostworld:infopad",
+  "custom_book_item": "lostowlrd:infopad",
+  "header_color": "d4af37"
+}

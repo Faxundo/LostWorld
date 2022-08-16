@@ -31,12 +31,8 @@ public class BleedingEnchantment extends Enchantment {
 
     @Override
     public boolean canAccept(Enchantment other) {
-        return super.canAccept(other) && other != ModEnchantments.CAPTURE;
-    }
-
-    @Override
-    public boolean isAvailableForEnchantedBookOffer() {
-        return false;
+        return super.canAccept(other) && other != ModEnchantments.CAPTURE
+                && this != other;
     }
 
     @Override

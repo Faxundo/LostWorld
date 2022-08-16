@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "/#"
+  ],
+  "key": {
+    "#": {
+      "item": "lostworld:poison_bottle"
+    },
+    "/": {
+      "item": "lostworld:netherite_knife"
+    }
+  },
+  "result": {
+    "item": "lostworld:netherite_knife_poisoned"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "lostworld:item/netherite_knife_poisoned"
+  }
+}

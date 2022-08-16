@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "lostworld:flint_knife",
-    "lostworld:flint_knife_poisoned"
+    "lostworld:flint_knife_poisoned",
+    "lostworld:iron_knife",
+    "lostworld:diamond_knife",
+    "lostworld:netherite_knife"
   ]
 }

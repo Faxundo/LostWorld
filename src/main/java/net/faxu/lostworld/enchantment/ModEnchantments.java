@@ -16,6 +16,8 @@ public class ModEnchantments {
             Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
     public static Enchantment MIGHTY = register("mighty", new MightyEnchantment(
             Enchantment.Rarity.RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
+    public static Enchantment BUTCHERING = register("butchering", new ButcheringEnchantment(
+            Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
 
     public static Enchantment register(String name, Enchantment enchantment) {
         return Registry.register(Registry.ENCHANTMENT, new Identifier(LostWorld.MOD_ID, name), enchantment);

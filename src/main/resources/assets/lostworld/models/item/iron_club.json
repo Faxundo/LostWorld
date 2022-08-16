@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "lostworld:item/butcher_knife"
+    "layer0": "lostworld:item/iron_club"
   }
 }

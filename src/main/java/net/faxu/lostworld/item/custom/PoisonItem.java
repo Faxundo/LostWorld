@@ -15,6 +15,7 @@ public class PoisonItem extends Item {
     public PoisonItem(Settings settings) {
         super(settings);
     }
+
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {

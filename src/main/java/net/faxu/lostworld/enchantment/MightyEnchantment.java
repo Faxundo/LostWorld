@@ -33,7 +33,8 @@ public class MightyEnchantment extends Enchantment {
     @Override
     protected boolean canAccept(Enchantment other) {
         return super.canAccept(other) && other != ModEnchantments.GUARD
-                && !(other instanceof DamageEnchantment);
+                && !(other instanceof DamageEnchantment)
+                && this != other;
     }
 
     @Override

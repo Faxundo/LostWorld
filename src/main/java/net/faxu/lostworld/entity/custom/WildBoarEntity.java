@@ -1,7 +1,7 @@
 package net.faxu.lostworld.entity.custom;
 
+
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -31,7 +31,7 @@ public class WildBoarEntity extends HostileEntity implements IAnimatable {
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 7)
                 .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, 1.0)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 1.8f)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2f)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25f)
                 .add(EntityAttributes.GENERIC_ARMOR, 5)
                 .add(EntityAttributes.GENERIC_ARMOR_TOUGHNESS, 1);
     }
@@ -39,11 +39,9 @@ public class WildBoarEntity extends HostileEntity implements IAnimatable {
     @Override
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(1, new MeleeAttackGoal(this, 1.0, false));
-        this.targetSelector.add(3, new ActiveTargetGoal(this, PlayerEntity.class, true));
-        this.goalSelector.add(4, new WanderAroundFarGoal(this, 1.0, 0.0F));
-        this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 8.0F));
-        this.goalSelector.add(6, new LookAroundGoal(this));
+        this.goalSelector.add(2, new MeleeAttackGoal(this,1.0, false));
+        this.targetSelector.add(1, new ActiveTargetGoal(this, PlayerEntity.class, true));
+        this.goalSelector.add(3, new WanderAroundFarGoal(this, 1.0, 0.0F));
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
@@ -55,27 +53,10 @@ public class WildBoarEntity extends HostileEntity implements IAnimatable {
         return PlayState.CONTINUE;
     }
 
-    /*
-    private <E extends IAnimatable> PlayState attack(AnimationEvent<E> event) {
-        LivingEntity livingEntity = WildBoarEntity.this.getTarget();
-        if (this.getTarget() != null) {
-            if (this.tryAttack(livingEntity) ) {
-                event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.wild_boar.attack", true));
-                return PlayState.CONTINUE;
-            }
-        }
-        return PlayState.STOP;
-    }
-    */
-
     @Override
     public void registerControllers(AnimationData animationData) {
         animationData.addAnimationController(new AnimationController(this, "controller",
                 0, this::predicate));
-        /*
-        animationData.addAnimationController(new AnimationController(this, "attack",
-                5, this::attack));
-                */
     }
 
     @Override

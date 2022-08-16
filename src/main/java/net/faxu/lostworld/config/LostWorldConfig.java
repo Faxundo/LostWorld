@@ -10,13 +10,16 @@ import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 public class LostWorldConfig implements ConfigData {
 
 
-    @Comment("Bleeding enchant or not")
+    @Comment("Bleeding enchant is enabled or not")
     public boolean activateBleedingEnchantment = true;
-    @Comment("Capture enchant or not")
+    @Comment("Capture enchant is enabled or not")
     public boolean activateCaptureEnchantment = true;
-    @Comment("Guard enchant or not")
+    @Comment("Guard enchant is enabled or not")
     public boolean activateGuardEnchantment = true;
-    @Comment("Mighty enchant or not")
+    @Comment("Mighty enchant is enabled or not")
     public boolean activateMightyEnchantment = true;
-
+    @Comment("Butchering enchant is enabled or not")
+    public boolean activateButcheringEnchantment = true;
+    @Comment("Slingshot can use Punch or no")
+    public boolean SlingshotUsePunchEnchantment = true;
 }

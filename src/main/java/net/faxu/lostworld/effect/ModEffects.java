@@ -10,6 +10,7 @@ public class ModEffects {
     public static StatusEffect BLEED;
     public static StatusEffect STUN;
     public static StatusEffect SATISFACTION;
+    public static StatusEffect FROZEN;
 
     public static StatusEffect registerBleed(String name) {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(LostWorld.MOD_ID, name),
@@ -23,6 +24,10 @@ public class ModEffects {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(LostWorld.MOD_ID, name),
                 new SatisfactionEffect(StatusEffectCategory.BENEFICIAL, 164255157));
     }
+    public static StatusEffect registerFrozen(String name) {
+        return Registry.register(Registry.STATUS_EFFECT, new Identifier(LostWorld.MOD_ID, name),
+                new SatisfactionEffect(StatusEffectCategory.HARMFUL, 143204231));
+    }
 
 
 
@@ -30,5 +35,6 @@ public class ModEffects {
         BLEED = registerBleed("bleed");
         STUN = registerStun("stun");
         SATISFACTION = registerSatisfaction("satisfaction");
+        FROZEN = registerFrozen("frozen");
     }
 }

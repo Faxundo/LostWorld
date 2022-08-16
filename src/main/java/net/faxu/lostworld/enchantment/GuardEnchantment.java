@@ -29,7 +29,8 @@ public class GuardEnchantment extends Enchantment {
 
     @Override
     public boolean canAccept(Enchantment other) {
-        return !(other instanceof DamageEnchantment);
+        return !(other instanceof DamageEnchantment)
+                && this != other;
     }
 
     @Override

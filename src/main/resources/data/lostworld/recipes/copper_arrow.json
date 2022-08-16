@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "/",
+    "["
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "[": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "count": 4,
+    "item": "lostworld:copper_arrow"
+  }
+}

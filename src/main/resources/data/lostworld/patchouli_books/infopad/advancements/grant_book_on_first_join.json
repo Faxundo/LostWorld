@@ -1,0 +1,12 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "loot": [
+      "infopad:grant_book_on_first_join"
+    ]
+  }
+}

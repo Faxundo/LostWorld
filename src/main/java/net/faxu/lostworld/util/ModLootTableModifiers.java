@@ -26,7 +26,7 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.6f))
                         .conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create()
-                                        .items(ModItems.FLINT_KNIFE, ModItems.FLINT_KNIFE_POISONED)).build())
+                                        .tag(ModTags.Items.ITEMS_CAN_BE_COLLECT_FIBER)).build())
                         .with(ItemEntry.builder(ModItems.FIBER))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
                 tableBuilder.pool(poolBuilder.build());

@@ -21,6 +21,7 @@ public class ModTags {
     public static class Items {
         public static final TagKey<Item> ITEMS_CAN_BE_COLLECT_FIBER = createCommonTag("items_can_be_collect_fiber");
         public static final TagKey<Item> ITEMS_CAN_BE_POISONED = createCommonTag("items_can_be_poisoned");
+        public static final TagKey<Item> SLINGSHOT_PROJECTILES = createCommonTag("slingshot_projectiles");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(Registry.ITEM_KEY, new Identifier(LostWorld.MOD_ID, name));

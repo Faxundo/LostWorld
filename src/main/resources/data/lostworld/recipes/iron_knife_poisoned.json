@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "/#"
+  ],
+  "key": {
+    "#": {
+      "item": "lostworld:poison_bottle"
+    },
+    "/": {
+      "item": "lostworld:iron_knife"
+    }
+  },
+  "result": {
+    "item": "lostworld:iron_knife_poisoned"
+  }
+}

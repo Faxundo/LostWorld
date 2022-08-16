@@ -1,0 +1,6 @@
+{
+  "parent": "lostworld:item/wood_slingshot",
+  "textures": {
+    "layer0": "lostworld:item/wood_slingshot_pulling1"
+  }
+}
