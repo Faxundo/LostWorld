@@ -31,6 +31,8 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
     public static final Item BOAR_TUSK = registerItem("boar_tusk",
             new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
+    public static final Item STRIP_LEATHER = registerItem("strip_leather",
+            new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
     //FOOD
     public static final Item RATION = registerItem("ration",
             new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD).food(ModFoodComponents.RATION)));
@@ -122,6 +124,7 @@ public class ModItems {
     //SPAWN EGGS
     public static final Item WILD_BOAR_SPAWN_EGG = registerItem("wild_boar_spawn_egg",
             new SpawnEggItem(ModEntities.WILD_BOAR, 0xbc9569, 0xffffdd, new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
+    //BLOCKS
 
 
     //Register new Item

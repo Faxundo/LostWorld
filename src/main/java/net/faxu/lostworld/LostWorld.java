@@ -4,6 +4,7 @@ import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.faxu.lostworld.block.ModBlocks;
+import net.faxu.lostworld.block.entity.ModBlockEntities;
 import net.faxu.lostworld.config.LostWorldConfig;
 import net.faxu.lostworld.effect.ModEffects;
 import net.faxu.lostworld.enchantment.ModEnchantments;
@@ -40,6 +41,8 @@ public class LostWorld implements ModInitializer {
 		ModMessages.registerC2SPackets();
 
 		GeckoLib.initialize();
+
+		ModBlockEntities.registerAllBlockEntities();
 
 		AutoConfig.register(LostWorldConfig.class, JanksonConfigSerializer::new);
 		CONFIG = AutoConfig.getConfigHolder(LostWorldConfig.class).getConfig();

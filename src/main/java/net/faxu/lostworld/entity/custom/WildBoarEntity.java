@@ -22,6 +22,7 @@ public class WildBoarEntity extends HostileEntity implements IAnimatable {
 
     public WildBoarEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
+        this.experiencePoints = 13;
     }
 
     public static DefaultAttributeContainer.Builder setAttributes() {
@@ -61,6 +62,7 @@ public class WildBoarEntity extends HostileEntity implements IAnimatable {
 
     @Override
     public AnimationFactory getFactory() {
-        return factory;
+        return this.factory;
     }
+
 }

@@ -56,6 +56,8 @@ public class ModItemGroup {
                 stacks.add(40, new ItemStack(ModItems.WOOD_SLINGSHOT));
                 stacks.add(41, new ItemStack(ModItems.IRON_SLINGSHOT));
                 stacks.add(42, new ItemStack(ModItems.COPPER_ARROW));
+                stacks.add(43, new ItemStack(ModBlocks.TANNING_RACK));
+                stacks.add(44, new ItemStack(ModItems.STRIP_LEATHER));
             })
             .build();
 }

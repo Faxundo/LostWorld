@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.faxu.lostworld.LostWorld;
 import net.faxu.lostworld.block.custom.BitterRootCropBlock;
+import net.faxu.lostworld.block.custom.TanningRackBlock;
 import net.faxu.lostworld.item.ModItemGroup;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -33,7 +34,9 @@ public class ModBlocks {
     //CROPS
     public static final Block BITTER_ROOT_CROP = registerBlockWithoutItem("bitter_root_crop",
             new BitterRootCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
-
+    //UTIL
+    public static final Block TANNING_RACK = registerBlock("tanning_rack",
+            new TanningRackBlock(FabricBlockSettings.of(Material.WOOD).nonOpaque()), ModItemGroup.LOSTWORLD);
 
     //Register new Block
     private static Block registerBlockWithoutItem(String name, Block block) {
@@ -41,6 +44,9 @@ public class ModBlocks {
     }
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);
+        return Registry.register(Registry.BLOCK, new Identifier(LostWorld.MOD_ID, name), block);
+    }
+    private static Block registerBlockWithoutBlockItem(String name, Block block, ItemGroup group) {
         return Registry.register(Registry.BLOCK, new Identifier(LostWorld.MOD_ID, name), block);
     }
     //Register Block like item
