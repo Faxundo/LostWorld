@@ -11,6 +11,7 @@ import net.faxu.lostworld.enchantment.ModEnchantments;
 import net.faxu.lostworld.item.ModItems;
 import net.faxu.lostworld.networking.ModMessages;
 import net.faxu.lostworld.particle.ModParticles;
+import net.faxu.lostworld.recipe.ModRecipes;
 import net.faxu.lostworld.util.ModLootTableModifiers;
 import net.faxu.lostworld.util.ModRegistries;
 import net.faxu.lostworld.world.feature.ModConfiguredFeatures;
@@ -43,6 +44,7 @@ public class LostWorld implements ModInitializer {
 		GeckoLib.initialize();
 
 		ModBlockEntities.registerAllBlockEntities();
+		ModRecipes.registerRecipes();
 
 		AutoConfig.register(LostWorldConfig.class, JanksonConfigSerializer::new);
 		CONFIG = AutoConfig.getConfigHolder(LostWorldConfig.class).getConfig();

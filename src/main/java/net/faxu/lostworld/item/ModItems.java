@@ -31,7 +31,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
     public static final Item BOAR_TUSK = registerItem("boar_tusk",
             new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
-    public static final Item STRIP_LEATHER = registerItem("strip_leather",
+    public static final Item LEATHER_STRIP = registerItem("leather_strip",
             new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
     //FOOD
     public static final Item RATION = registerItem("ration",

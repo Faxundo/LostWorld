@@ -1,0 +1,14 @@
+{
+  "type": "lostworld:tanning_rack",
+  "ingredients": [
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "lostworld:salt"
+    }
+  ],
+  "output": {
+    "item": "lostworld:leather_strip"
+  }
+}
