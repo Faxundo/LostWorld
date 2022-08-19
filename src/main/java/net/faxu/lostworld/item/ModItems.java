@@ -33,6 +33,10 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
     public static final Item LEATHER_STRIP = registerItem("leather_strip",
             new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
+    public static final Item TANNED_LEATHER = registerItem("tanned_leather",
+            new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
+    public static final Item TANNED_LEATHER_STRIP = registerItem("tanned_leather_strip",
+            new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
     //FOOD
     public static final Item RATION = registerItem("ration",
             new Item(new FabricItemSettings().group(ModItemGroup.LOSTWORLD).food(ModFoodComponents.RATION)));

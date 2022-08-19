@@ -5,10 +5,10 @@
       "item": "minecraft:leather"
     },
     {
-      "tag": "lostworld:item_can_be_collect_fiber"
+      "item": "lostworld:salt"
     }
   ],
   "output": {
-    "item": "lostworld:leather_strip"
+    "item": "lostworld:tanned_leather"
   }
 }

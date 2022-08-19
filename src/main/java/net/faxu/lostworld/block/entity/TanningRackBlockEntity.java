@@ -1,10 +1,14 @@
 package net.faxu.lostworld.block.entity;
 
+import net.faxu.lostworld.item.custom.KnifeItem;
 import net.faxu.lostworld.item.inventory.ImplementedInventory;
 import net.faxu.lostworld.recipe.TanningRackRecipe;
 import net.faxu.lostworld.screen.TanningRackScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
@@ -88,11 +92,14 @@ public class TanningRackBlockEntity extends BlockEntity implements NamedScreenHa
                 .getFirstMatch(TanningRackRecipe.Type.INSTANCE, inventory, world);
 
         if(match.isPresent()) {
-            entity.removeStack(1,1);
-            entity.removeStack(2,1);
-
-            entity.setStack(3, new ItemStack(match.get().getOutput().getItem(),
-                    entity.getStack(3).getCount() + 1));
+            if (entity.getStack(0).getItem() instanceof KnifeItem) {
+                int a = entity.getStack(0).getDamage();
+                entity.getStack(0).setDamage(a+1);
+                entity.removeStack(1,1);
+                entity.removeStack(2,1);
+                entity.setStack(3, new ItemStack(match.get().getOutput().getItem(),
+                        entity.getStack(3).getCount() + 1));
+            }
         }
     }
 

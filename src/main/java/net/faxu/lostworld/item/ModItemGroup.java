@@ -58,6 +58,8 @@ public class ModItemGroup {
                 stacks.add(42, new ItemStack(ModItems.COPPER_ARROW));
                 stacks.add(43, new ItemStack(ModBlocks.TANNING_RACK));
                 stacks.add(44, new ItemStack(ModItems.LEATHER_STRIP));
+                stacks.add(45, new ItemStack(ModItems.TANNED_LEATHER));
+                stacks.add(46, new ItemStack(ModItems.TANNED_LEATHER_STRIP));
             })
             .build();
 }
