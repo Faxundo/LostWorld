@@ -21,7 +21,7 @@ import net.minecraft.util.registry.Registry;
 public class ModBlocks {
     //BLOCKS
     public static final Block TIN_BLOCK = registerBlock("tin_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(3.5f).requiresTool()), ModItemGroup.LOSTWORLD);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4.5f, 5.5f).requiresTool()), ModItemGroup.LOSTWORLD);
     public static final Block SALT_BLOCK = registerBlock("salt_block",
             new Block(FabricBlockSettings.of(Material.SOIL).strength(0.5f).sounds(BlockSoundGroup.SAND)), ModItemGroup.LOSTWORLD);
     //ORES
@@ -36,7 +36,7 @@ public class ModBlocks {
             new BitterRootCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
     //UTIL
     public static final Block TANNING_RACK = registerBlock("tanning_rack",
-            new TanningRackBlock(FabricBlockSettings.of(Material.WOOD).nonOpaque()), ModItemGroup.LOSTWORLD);
+            new TanningRackBlock(FabricBlockSettings.of(Material.WOOD).nonOpaque().strength(2.5f)), ModItemGroup.LOSTWORLD);
 
     //Register new Block
     private static Block registerBlockWithoutItem(String name, Block block) {

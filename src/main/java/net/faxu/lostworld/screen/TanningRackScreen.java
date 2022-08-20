@@ -43,11 +43,9 @@ public class TanningRackScreen extends HandledScreen<TanningRackScreenHandler> {
         if (!handler.getSlot(2).hasStack()) {
             drawTexture(matrices, x + 64, y + 17, 177, 75, 16, 16);
         }
-        if ((handler.getSlot(0).hasStack() || handler.getSlot(1).hasStack())) {
-            if (!(handler.getSlot(0).getStack().getItem() instanceof KnifeItem)
-                    || !(handler.getSlot(1).getStack().getItem().equals(Items.LEATHER))) {
-                drawTexture(matrices, x + 102, y + 32, 177, 1, 28, 21);
-            }
+
+        if(handler.isCrafting()) {
+            drawTexture(matrices, x + 102, y + 32, 177, 22, handler.getScaledProgress(), 20);
         }
     }
 

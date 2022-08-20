@@ -1,0 +1,14 @@
+{
+  "type": "lostworld:tanning_rack",
+  "ingredients": [
+    {
+      "item": "lostworld:tanned_leather"
+    },
+    {
+      "tag": "lostworld:item_can_be_collect_fiber"
+    }
+  ],
+  "output": {
+    "item": "lostworld:tanned_leather_strip"
+  }
+}
