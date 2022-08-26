@@ -1,0 +1,7 @@
+{
+  "values": {
+    "lostworld:vigor": {
+      "minecraft:generic.attack_damage": 0.25
+    }
+  }
+}

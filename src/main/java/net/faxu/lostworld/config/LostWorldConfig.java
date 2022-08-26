@@ -22,4 +22,8 @@ public class LostWorldConfig implements ConfigData {
     public boolean activateButcheringEnchantment = true;
     @Comment("Slingshot can use Punch or no")
     public boolean SlingshotUsePunchEnchantment = true;
+    @Comment("Curse of Rusty is enabled or not")
+    public boolean activateRustyCurse = true;
+    @Comment("Curse of Thorny Roses is enabled or not")
+    public boolean activateThornyRoses = true;
 }

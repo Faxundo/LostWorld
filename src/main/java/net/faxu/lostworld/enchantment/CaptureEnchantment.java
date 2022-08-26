@@ -15,8 +15,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.random.Random;
 
 public class CaptureEnchantment extends Enchantment {
-    protected CaptureEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot... slotTypes) {
-        super(weight, type, slotTypes);
+    public CaptureEnchantment() {
+        super(Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
     }
 
     @Override
@@ -35,9 +35,9 @@ public class CaptureEnchantment extends Enchantment {
 
     @Override
     public boolean canAccept(Enchantment other) {
-        return super.canAccept(other) && other != ModEnchantments.BLEEDING
-                && !(other instanceof DamageEnchantment)
-                && this != other;
+        return super.canAccept(other)
+                || other instanceof BleedingEnchantment
+                || other instanceof DamageEnchantment;
     }
 
     @Override

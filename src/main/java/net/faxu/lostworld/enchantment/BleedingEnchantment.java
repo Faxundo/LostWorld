@@ -11,8 +11,8 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.util.math.random.Random;
 
 public class BleedingEnchantment extends Enchantment {
-    protected BleedingEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot... slotTypes) {
-        super(weight, type, slotTypes);
+    public BleedingEnchantment() {
+        super(Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
     }
 
     @Override

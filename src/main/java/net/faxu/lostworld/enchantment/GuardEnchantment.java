@@ -9,8 +9,8 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 
 public class GuardEnchantment extends Enchantment {
-    public GuardEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot... slotTypes) {
-        super(weight, type, slotTypes);
+    public GuardEnchantment() {
+        super(Rarity.COMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
     }
 
     @Override

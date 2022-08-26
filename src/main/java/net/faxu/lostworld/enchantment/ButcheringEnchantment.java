@@ -13,8 +13,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 public class ButcheringEnchantment extends Enchantment {
-    protected ButcheringEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot... slotTypes) {
-        super(weight, type, slotTypes);
+    public ButcheringEnchantment() {
+        super(Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
     }
 
     @Override

@@ -20,13 +20,8 @@ public class FrozenEffect extends StatusEffect {
 
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-            EntityAttributeInstance attribute = entity.getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED);
-            EntityAttributeModifier modifier = new EntityAttributeModifier(FROZEN_UUID, "frozen", -0.1d, EntityAttributeModifier.Operation.MULTIPLY_BASE);
-            attribute.addPersistentModifier(modifier);
-    }
-
-    @Override
-    public boolean canApplyUpdateEffect(int duration, int amplifier) {
-        return true;
+        EntityAttributeModifier modifier = new EntityAttributeModifier(UUID.fromString("FROZEN_LOSTWORLD"),
+                "frozen", -1.0D, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
+        entity.getAttributes().getCustomInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED).addPersistentModifier(modifier);
     }
 }

@@ -12,7 +12,6 @@ import net.faxu.lostworld.entity.client.armor.CopperArmorRenderer;
 import net.faxu.lostworld.entity.client.projectile.CopperArrowRenderer;
 import net.faxu.lostworld.entity.client.projectile.PebbleRenderer;
 import net.faxu.lostworld.item.ModItems;
-import net.faxu.lostworld.networking.ModMessages;
 import net.faxu.lostworld.particle.ModParticles;
 import net.faxu.lostworld.particle.custom.BleedingParticle;
 import net.faxu.lostworld.particle.custom.StunParticle;
@@ -37,8 +36,6 @@ public class LostWorldClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.COPPER_ARROW, CopperArrowRenderer::new);
 
 
-
-        ModMessages.registerS2CPackests();
         ModModelPredicateProvider.registerModModels();
 
         ScreenRegistry.register(ModScreenHandlers.TANNING_RACK_SCREEN_HANDLER, TanningRackScreen::new);

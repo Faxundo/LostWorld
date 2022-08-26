@@ -15,4 +15,6 @@ public class ModKnifeSlot extends Slot {
     public boolean canInsert(ItemStack stack) {
         return stack.getItem() instanceof KnifeItem;
     }
+
+
 }

@@ -20,6 +20,7 @@ repositories {
 	maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
 	maven { url "https://maven.shedaniel.me/" }
 	maven { url 'https://maven.blamejared.com' }
+	maven { url = "https://www.cursemaven.com" }
 
 }
 
@@ -34,11 +35,13 @@ dependencies {
 	// Mod Menu
 	modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
 	// GeckoLib
-	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.19:3.1.8'
+	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.19:3.1.16'
 	//Cloth Config
 	modApi("me.shedaniel.cloth:cloth-config-fabric:8.0.75") {exclude(group: "net.fabricmc.fabric-api")}
 	//Patchouli
 	modImplementation "vazkii.patchouli:Patchouli:1.19-75-FABRIC"
+	//Data Attributes
+	modImplementation "curse.maven:dataattributes-514734:3931069"
 
 
 	// Uncomment the following line to enable the deprecated Fabric API modules. 

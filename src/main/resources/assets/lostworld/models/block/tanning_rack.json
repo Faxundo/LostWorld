@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
-		"0": "tanning_rack",
-		"particle": "tanning_rack"
+		"0": "lostworld:block/tanning_rack",
+		"particle": "minecraft:block/oak_planks"
 	},
 	"elements": [
 		{

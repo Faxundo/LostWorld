@@ -1,0 +1,19 @@
+{
+  "values": {
+    "minecraft:player": {
+      "lostworld:level": 0.0,
+      "minecraft:generic.max_health": 20.0,
+      "lostworld:vigor": 0.0,
+      "minecraft:generic_knockback": 0.0,
+      "minecraft:generic.knockback_resistance": 0.0,
+      "minecraft:generic.armor": 0.0,
+      "minecraft:generic.armor_toughness": 0.0,
+      "minecraft:generic.luck": 0.0,
+      "lostworld:heat_defense": 0.0,
+      "lostworld:cold_defense": 0.0,
+      "lostworld:radioactive_defense": 0.0,
+      "lostworld:electric_defense": 0.0,
+      "lostworld:wither_defense": 0.0
+    }
+  }
+}

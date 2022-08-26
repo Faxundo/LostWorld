@@ -50,6 +50,7 @@
   "item.lostworld.leather_strip": "Tiras de Cuero",
   "item.lostworld.tanned_leather": "Cuero Curtido",
   "item.lostworld.tanned_leather_strip": "Tiras de Cuero Curtido",
+  "item.lostworld.scrap": "Chatarra",
 
   "block.lostworld.tin_block": "Bloque de Estaño",
   "block.lostworld.tin_ore": "Mena de Estaño",
@@ -67,7 +68,8 @@
   "enchantment.lostworld.capture": "Captura",
   "enchantment.lostworld.bleeding": "Sangrado",
   "enchantment.lostworld.mighty": "Poderoso",
-  "enchantment.lostworld.buchering": "Descuartizar",
+  "enchantment.lostworld.butchering": "Descuartizar",
+  "enchantment.lostworld.curse_of_rusty": "Maldición de Oxidación",
 
   "entity.lostworld.wild_boar": "Jabalí Salvaje",
 

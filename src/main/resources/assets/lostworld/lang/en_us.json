@@ -50,6 +50,7 @@
   "item.lostworld.leather_strip": "Leather Strip",
   "item.lostworld.tanned_leather": "Tanned Leather",
   "item.lostworld.tanned_leather_strip": "Tanned Leather Strip",
+  "item.lostworld.scrap": "Scrap",
 
 
   "block.lostworld.tin_block": "Block of Tin",
@@ -68,7 +69,8 @@
   "enchantment.lostworld.capture": "Capture",
   "enchantment.lostworld.bleeding": "Bleeding",
   "enchantment.lostworld.mighty": "Mighty",
-  "enchantment.lostworld.buchering": "Buchering",
+  "enchantment.lostworld.butchering": "Buchering",
+  "enchantment.lostworld.curse_of_rusty": "Curse of Rusty",
 
   "entity.lostworld.wild_boar": "Wild Boar",
 

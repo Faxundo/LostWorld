@@ -1,0 +1,38 @@
+-Problemas-
+Al romper caña de azúcar con el cuchillo, suelta caña de azúcar.
+Ataque de jabali
+Capture no aparece en la mesa de encantamientos
+Frozen no anda
+
+-Ideas-
+Agregar sal a la generacion
+Plata como subproducto del Cobre u Oro
+Acero: (Horno Fundición) Bloque de carbón + Lingote de Hierro
+Acero = Netherite pero más barato.
+Troll del Bosque
+Ropas
+Piedra para afilar espadas
+Chakram: Arrojadiza: Puede ser usado como arma arrojadiza, obteniendo +2 de daño al hacerlo
+Escopeta: Disparo Disperso: Al disparar desde corta o media distancia, el disparo se dispersa y puede golpear a varios objetivos, aunque causando -50% de daño
+Azada: Te da xp al recolectar crops
+Pistola: Agruparse: Acertar un disparo otorga un disparo como acción básica para el siguiente turno
+Shuriken: Apuro: Puedes lanzar 2 shuriken por PA que utilices
+Fusil: Perforante: 50% del daño total, atraviesa la Defensa
+Lanza: Cacería Primitiva: Causa +2 daño a Animales
+Cañon de Mano: Rebote, si: Puedes hacer una tirada de victoria para que el disparo rebote a un objetivo cercano luego de impactar por primera vez
+Honda: Fuerza Muscular: A pesar de ser un arma a distancia, se le suma el vigor como daño como si fuese un arma cuerpo a cuerpo.
+Puño de Guerra: Rompe-Caras: El tercer ataque realizado con estas armas, en un mismo turno, no tiene coste
+Boleadora: Atrapar: Lanzar hacia los pies siempre resultará en inmovilizar al objetivo. Si se busca otro resultado, se puede hacer una Tirada de Victoria
+Cerbatana: Fuerza Pulmonar: A pesar de ser un arma a distancia, se le suma el vigor como daño como si fuese un arma cuerpo a cuerpo.
+Granada: Preparado: Una vez por turno, luego de usar una granada, se tiene una acción básica para cambiar de arma.
+Lanzallamas: Quemador: Todos los objetivos dañados obtienen una Quemadura según el 10% del daño recibido
+Lanzacohetes: Explosión: Al impactar esparce sus efectos a objetivos cercanos con un 50% de efectividad
+Macuahuilt: Efectos Colaterales: Colocar y cambiar las cuchillas contará como una Recarga. Además, los efectos provocados por este arma tienen +20% de efectividad
+
+
+
+
+-Pendientes-
+Efecto que multiplique la experiencia obtenida
+
+

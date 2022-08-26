@@ -11,6 +11,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.SimpleInventory;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.NamedScreenHandlerFactory;
@@ -19,6 +20,7 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -136,9 +138,13 @@ public class TanningRackBlockEntity extends BlockEntity implements NamedScreenHa
                 .getFirstMatch(TanningRackRecipe.Type.INSTANCE, inventory, world);
 
         if(match.isPresent()) {
-            if (entity.getStack(0).getItem() instanceof KnifeItem) {
-                int a = entity.getStack(0).getDamage();
-                entity.getStack(0).setDamage(a+1);
+            ItemStack stack = entity.getStack(0);
+            if (stack.getItem() instanceof KnifeItem) {
+                if (!(stack.getDamage() == stack.getMaxDamage())) {
+                    if (stack.damage(1, Random.create(0), null)) {
+                        stack.decrement(1);
+                    }
+                }
                 entity.removeStack(1,1);
                 entity.removeStack(2,1);
                 entity.setStack(3, new ItemStack(match.get().getOutput().getItem(),

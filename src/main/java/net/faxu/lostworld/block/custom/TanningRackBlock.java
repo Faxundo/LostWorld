@@ -108,13 +108,13 @@ public class TanningRackBlock extends BlockWithEntity implements BlockEntityProv
         ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     public static final VoxelShape SHAPE_W = Stream.of(
-            Block.createCuboidShape(0, 0, 7, 16, 5, 16),
-            Block.createCuboidShape(1, 15, 1, 13, 15, 13),
-            Block.createCuboidShape(13, 5, 7-15, 16, 16, 16),
-            Block.createCuboidShape(0, 5, 14, 13, 16, 16),
-            Block.createCuboidShape(0, 5, 5-15, 13, 16, 2),
-            Block.createCuboidShape(1, 5, 1, 13, 12, 13),
-            Block.createCuboidShape(0, 5, 1, 1, 15, 13)
+            Block.createCuboidShape(-1.0658141036401503e-14, 0, 3.552713678800501e-15, 15.999999999999991, 5, 16.000000000000004),
+            Block.createCuboidShape(1.0000000000000009, 15, 1.9999999999999876, 13, 15, 13.999999999999986),
+            Block.createCuboidShape(12.99999999999999, 5, 3.552713678800501e-15, 15.99999999999999, 16, 16.000000000000004),
+            Block.createCuboidShape(-2.6645352591003757e-15, 5, 13.999999999999993, 13, 16, 15.999999999999993),
+            Block.createCuboidShape(-2.6645352591003757e-15, 5, 4.440892098500626e-15, 13, 16, 2.0000000000000036),
+            Block.createCuboidShape(1.0000000000000009, 5, 1.9999999999999876, 13, 12, 13.999999999999986),
+            Block.createCuboidShape(-2.6645352591003757e-15, 5, 1.9999999999999876, 0.9999999999999973, 15, 13.999999999999986)
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     public static final VoxelShape SHAPE_S = Stream.of(
@@ -128,13 +128,13 @@ public class TanningRackBlock extends BlockWithEntity implements BlockEntityProv
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     public static final VoxelShape SHAPE_E = Stream.of(
-            Block.createCuboidShape(-1-15, 0, -5, 15, 5, 15),
-            Block.createCuboidShape(2, 15, 2, 14, 15, 14),
-            Block.createCuboidShape(4-16, 5, -5, 3, 16, 15),
-            Block.createCuboidShape(2, 5, -4, 15, 16, 1),
-            Block.createCuboidShape(2, 5, 13, 15, 16, 15),
-            Block.createCuboidShape(2, 5, 2, 14, 12, 14),
-            Block.createCuboidShape(14, 5, 2, 15, 15, 14)
+            Block.createCuboidShape(-5.329070518200751e-15, 0, -1.0658141036401503e-14, 15.999999999999995, 5, 15.99999999999999),
+            Block.createCuboidShape(2.999999999999986, 15, 2.000000000000007, 14.999999999999986, 15, 14.000000000000007),
+            Block.createCuboidShape(-3.1086244689504383e-15, 5, -1.0658141036401503e-14, 2.999999999999996, 16, 15.99999999999999),
+            Block.createCuboidShape(2.999999999999986, 5, 3.1086244689504383e-15, 15.99999999999999, 16, 2.000000000000003),
+            Block.createCuboidShape(2.999999999999986, 5, 13.999999999999991, 15.99999999999999, 16, 15.999999999999991),
+            Block.createCuboidShape(2.999999999999986, 5, 2.000000000000007, 14.999999999999986, 12, 14.000000000000007),
+            Block.createCuboidShape(14.999999999999988, 5, 2.000000000000007, 15.99999999999999, 15, 14.000000000000007)
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     @Override
