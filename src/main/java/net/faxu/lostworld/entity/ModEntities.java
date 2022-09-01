@@ -3,9 +3,7 @@ package net.faxu.lostworld.entity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.fabricmc.loader.api.FabricLoader;
 import net.faxu.lostworld.LostWorld;
-import net.faxu.lostworld.entity.custom.WildBoarEntity;
-import net.faxu.lostworld.entity.custom.CopperArrowEntity;
-import net.faxu.lostworld.entity.custom.PebbleEntity;
+import net.faxu.lostworld.entity.custom.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
@@ -27,6 +25,19 @@ public class ModEntities {
             new Identifier(LostWorld.MOD_ID, "copper_arrow"),
             FabricEntityTypeBuilder.<CopperArrowEntity>create(SpawnGroup.MISC, CopperArrowEntity::new)
                     .dimensions(EntityDimensions.fixed(0.25F, 0.25F)).build());
+    public static final EntityType<IronShurikenEntity> IRON_SHURIKEN = Registry.register(
+            Registry.ENTITY_TYPE,
+            new Identifier(LostWorld.MOD_ID, "iron_shuriken"),
+            FabricEntityTypeBuilder.<IronShurikenEntity>create(SpawnGroup.MISC, IronShurikenEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.25F, 0.25F))
+                    .trackRangeBlocks(4).trackedUpdateRate(10)
+                    .build());
+    public static final EntityType<IronSpearEntity> IRON_SPEAR = Registry.register(
+            Registry.ENTITY_TYPE,
+            new Identifier(LostWorld.MOD_ID, "iron_spear"),
+            FabricEntityTypeBuilder.<IronSpearEntity>create(SpawnGroup.MISC, IronSpearEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.5F, 0.5F))
+                    .build());
 
     public static <T extends Entity> EntityType<T> buildEntity(EntityType.EntityFactory<T> entity, Class<T> entityClass,
                                                                float width, float height, SpawnGroup group) {

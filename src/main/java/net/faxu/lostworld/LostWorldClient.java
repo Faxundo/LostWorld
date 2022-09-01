@@ -9,11 +9,11 @@ import net.faxu.lostworld.block.ModBlocks;
 import net.faxu.lostworld.entity.ModEntities;
 import net.faxu.lostworld.entity.client.WildBoarRenderer;
 import net.faxu.lostworld.entity.client.armor.CopperArmorRenderer;
-import net.faxu.lostworld.entity.client.projectile.CopperArrowRenderer;
-import net.faxu.lostworld.entity.client.projectile.PebbleRenderer;
+import net.faxu.lostworld.entity.client.projectile.*;
 import net.faxu.lostworld.item.ModItems;
 import net.faxu.lostworld.particle.ModParticles;
 import net.faxu.lostworld.particle.custom.BleedingParticle;
+import net.faxu.lostworld.particle.custom.HitParticle;
 import net.faxu.lostworld.particle.custom.StunParticle;
 import net.faxu.lostworld.screen.ModScreenHandlers;
 import net.faxu.lostworld.screen.TanningRackScreen;
@@ -22,11 +22,13 @@ import net.minecraft.client.render.RenderLayer;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class LostWorldClient implements ClientModInitializer {
+
     @Override
     public void onInitializeClient() {
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.STUN_PARTICLE, StunParticle.Factory::new);
         ParticleFactoryRegistry.getInstance().register(ModParticles.BLEEDING_PARTICLE, BleedingParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(ModParticles.HIT_PARTICLE, HitParticle.Factory::new);
         GeoArmorRenderer.registerArmorRenderer(new CopperArmorRenderer(), ModItems.COPPER_BOOTS,
                 ModItems.COPPER_LEGGINGS, ModItems.COPPER_CHESTPLATE, ModItems.COPPER_HELMET);
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BITTER_ROOT_CROP, RenderLayer.getCutout());
@@ -34,6 +36,9 @@ public class LostWorldClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.WILD_BOAR, WildBoarRenderer::new);
         EntityRendererRegistry.register(ModEntities.PEBBLE, PebbleRenderer::new);
         EntityRendererRegistry.register(ModEntities.COPPER_ARROW, CopperArrowRenderer::new);
+        EntityRendererRegistry.register(ModEntities.IRON_SHURIKEN, IronShurikenRenderer::new);
+        EntityRendererRegistry.register(ModEntities.IRON_SPEAR, IronSpearRenderer::new);
+
 
 
         ModModelPredicateProvider.registerModModels();

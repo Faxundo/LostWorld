@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "lostworld:item/diamond_knife_poisoned"
-  }
-}

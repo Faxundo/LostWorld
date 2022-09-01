@@ -11,7 +11,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.SimpleInventory;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.NamedScreenHandlerFactory;
@@ -94,8 +93,6 @@ public class TanningRackBlockEntity extends BlockEntity implements NamedScreenHa
     public static void tick(World world, BlockPos pos, BlockState state, TanningRackBlockEntity entity) {
         if (entity.getStack(0).getItem() == ModItems.FLINT_KNIFE) {entity.maxProgress = 180;}
         if (entity.getStack(0).getItem() == ModItems.IRON_KNIFE) {entity.maxProgress = 140;}
-        if (entity.getStack(0).getItem() == ModItems.DIAMOND_KNIFE) {entity.maxProgress = 100;}
-        if (entity.getStack(0).getItem() == ModItems.NETHERITE_KNIFE) {entity.maxProgress = 60;}
         if (hasRecipe(entity) && hasNotReachedStackLimit(entity) && entity.getStack(0).getItem() instanceof KnifeItem) {
             entity.progress++;
             if (entity.progress == entity.maxProgress) {

@@ -26,7 +26,7 @@ public class ModEffects {
     }
     public static StatusEffect registerFrozen(String name) {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(LostWorld.MOD_ID, name),
-                new SatisfactionEffect(StatusEffectCategory.HARMFUL, 143204231));
+                new FrozenEffect(StatusEffectCategory.HARMFUL, 143204231));
     }
 
 

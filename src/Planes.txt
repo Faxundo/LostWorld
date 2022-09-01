@@ -1,10 +1,14 @@
 -Problemas-
 Al romper caña de azúcar con el cuchillo, suelta caña de azúcar.
 Ataque de jabali
-Capture no aparece en la mesa de encantamientos
-Frozen no anda
+Frozen se queda luego de terminar el efecto
+Particula de Hit solo sale a veces
+Shuriken: girar y que tenga efecto de giro
+Lanza: Al impactar se renderiza al revez
+Lanza: No se renderiza encantada al ser lanzada
 
 -Ideas-
+Daga: OffHand attack
 Agregar sal a la generacion
 Plata como subproducto del Cobre u Oro
 Acero: (Horno Fundición) Bloque de carbón + Lingote de Hierro
@@ -14,11 +18,9 @@ Ropas
 Piedra para afilar espadas
 Chakram: Arrojadiza: Puede ser usado como arma arrojadiza, obteniendo +2 de daño al hacerlo
 Escopeta: Disparo Disperso: Al disparar desde corta o media distancia, el disparo se dispersa y puede golpear a varios objetivos, aunque causando -50% de daño
-Azada: Te da xp al recolectar crops
+Azada: Te da xp al recolectar crops (Cuando click derecho en crop, reconocer que tipo de crop es y tomar su ubicacion, para luego agarrar y replantar [Evento o que es?])
 Pistola: Agruparse: Acertar un disparo otorga un disparo como acción básica para el siguiente turno
-Shuriken: Apuro: Puedes lanzar 2 shuriken por PA que utilices
 Fusil: Perforante: 50% del daño total, atraviesa la Defensa
-Lanza: Cacería Primitiva: Causa +2 daño a Animales
 Cañon de Mano: Rebote, si: Puedes hacer una tirada de victoria para que el disparo rebote a un objetivo cercano luego de impactar por primera vez
 Honda: Fuerza Muscular: A pesar de ser un arma a distancia, se le suma el vigor como daño como si fuese un arma cuerpo a cuerpo.
 Puño de Guerra: Rompe-Caras: El tercer ataque realizado con estas armas, en un mismo turno, no tiene coste

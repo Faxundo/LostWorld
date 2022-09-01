@@ -18,7 +18,7 @@ public class SlingshotEnchantmentsMixin {
     public EnchantmentTarget type;
 
     @Inject(method = "isAcceptableItem", at = @At(value = "HEAD"), cancellable = true)
-    public void isAcceptableItem(ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
+    public void onIsAcceptableItem(ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
         Enchantment enchantment = (Enchantment) (Object) this;
         if (stack.getItem() instanceof SlingshotItem) {
             if (enchantment instanceof PowerEnchantment) {

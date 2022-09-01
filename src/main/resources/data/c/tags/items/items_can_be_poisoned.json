@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "lostworld:flin_knife"
+    "lostworld:flin_knife",
+    "lostword:iron_knife"
   ]
 }

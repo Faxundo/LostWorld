@@ -6,7 +6,10 @@ import net.faxu.lostworld.block.ModBlocks;
 import net.faxu.lostworld.entity.ModEntities;
 import net.faxu.lostworld.item.custom.*;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.*;
+import net.minecraft.item.AliasedBlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -69,51 +72,24 @@ public class ModItems {
     public static final Item IRON_KNIFE_POISONED = registerItem("iron_knife_poisoned",
             new ModSwordPoisonedItem(ToolMaterials.IRON, 0, -2.0f,
                     new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
-    public static final Item DIAMOND_KNIFE = registerItem("diamond_knife",
-            new KnifeItem(ToolMaterials.DIAMOND, 0, -2.0f,
-                    new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
-    public static final Item DIAMOND_KNIFE_POISONED = registerItem("diamond_knife_poisoned",
-            new ModSwordPoisonedItem(ToolMaterials.DIAMOND, 0, -2.0f,
-                    new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
-    public static final Item NETHERITE_KNIFE = registerItem("netherite_knife",
-            new KnifeItem(ToolMaterials.NETHERITE, 0, -2.0f,
-                    new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
-    public static final Item NETHERITE_KNIFE_POISONED = registerItem("netherite_knife_poisoned",
-            new ModSwordPoisonedItem(ToolMaterials.NETHERITE, 0, -2.0f,
-                    new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
-    public static final Item IRON_BUTCHER_KNIFE = registerItem("iron_butcher_knife",
-            new ButcherKnife(ToolMaterials.IRON, 1, -2.4f,
-                    new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
-    public static final Item DIAMOND_BUTCHER_KNIFE = registerItem("diamond_butcher_knife",
-            new ButcherKnife(ToolMaterials.DIAMOND, 1, -2.4f,
-                    new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
-    public static final Item NETHERITE_BUTCHER_KNIFE = registerItem("netherite_butcher_knife",
-            new ButcherKnife(ToolMaterials.NETHERITE, 1, -2.4f,
-                    new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
-    public static final Item WOOD_CLUB = registerItem("wood_club",
-            new ClubItem(ToolMaterials.WOOD, 4, -2.6f,
+    public static final Item SLINGSHOT = registerItem("slingshot",
+            new SlingshotItem(new FabricItemSettings().group(ModItemGroup.LOSTWORLD).maxDamage(300)));
+    public static final Item IRON_SPEAR = registerItem("iron_spear",
+            new SpearItem(ToolMaterials.IRON, 2, -2.4f,
                     new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
     public static final Item BONE_CLUB = registerItem("bone_club",
-            new ClubItem(ModToolMaterials.BONE, 5, -2.6f,
+            new ClubItem(ModToolMaterials.BONE, 6, -2.7f,
                     new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
-    public static final Item IRON_CLUB = registerItem("iron_club",
-            new ClubItem(ToolMaterials.IRON, 4, -2.6f,
+    public static final Item BASEBALL_BAT = registerItem("baseball_bat",
+            new ClubItem(ToolMaterials.IRON, 6, -2.7f,
                     new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
-    public static final Item DIAMOND_CLUB = registerItem("diamond_club",
-            new ClubItem(ToolMaterials.DIAMOND, 4, -2.6f,
-                    new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
-    public static final Item NETHERITE_CLUB = registerItem("netherite_club",
-            new ClubItem(ToolMaterials.NETHERITE, 4, -2.6f,
-                    new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
-    public static final Item WOOD_SLINGSHOT = registerItem("wood_slingshot",
-            new SlingshotItem(new FabricItemSettings().group(ModItemGroup.LOSTWORLD).maxDamage(300)));
-    public static final Item IRON_SLINGSHOT = registerItem("iron_slingshot",
-            new SlingshotItem(new FabricItemSettings().group(ModItemGroup.LOSTWORLD).maxDamage(600)));
     //PROJECTILE
     public static final Item PEBBLE = registerItem("pebble",
             new PebbleItem(new FabricItemSettings().group(ModItemGroup.LOSTWORLD), 0.6f));
     public static final Item COPPER_ARROW = registerItem("copper_arrow",
             new CopperArrowItem(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
+    public static final Item IRON_SHURIKEN = registerItem("iron_shuriken",
+            new ShurikenItem(new FabricItemSettings().group(ModItemGroup.LOSTWORLD)));
     //ARMORS
     public static final Item COPPER_BOOTS = registerItem("copper_boots",
             new CopperArmorItem(ModArmorMaterials.COPPER, EquipmentSlot.FEET,

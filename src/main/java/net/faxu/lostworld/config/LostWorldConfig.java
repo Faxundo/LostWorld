@@ -26,4 +26,10 @@ public class LostWorldConfig implements ConfigData {
     public boolean activateRustyCurse = true;
     @Comment("Curse of Thorny Roses is enabled or not")
     public boolean activateThornyRoses = true;
+    @Comment("Hunt enchant is enabled or not")
+    public boolean activateHunt = true;
+    @Comment("Assassinate enchant is enabled or not")
+    public boolean activateAssassinate = true;
+    @Comment("Multiple Impact enchant is enabled or not")
+    public boolean activateMultipleImpact = true;
 }

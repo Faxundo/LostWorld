@@ -1,6 +1,7 @@
 package net.faxu.lostworld.enchantment;
 
 import net.faxu.lostworld.LostWorld;
+import net.faxu.lostworld.enchantment.custom.*;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -13,6 +14,9 @@ public class ModEnchantments {
     public static Enchantment BUTCHERING = register("butchering", new ButcheringEnchantment());
     public static Enchantment RUSTY = register("curse_of_rusty", new RustyCurse());
     public static Enchantment THORNYROSES = register("curse_of_thorny_roses", new ThornyRosesCurse());
+    public static Enchantment HUNT = register("hunt", new HuntEnchantment());
+    public static Enchantment ASSASSINATE = register("assassinate", new AssassinateEnchantment());
+    public static Enchantment MULTIPLE_IMPACT = register("multiple_impact", new MultipleImpactEnchantment());
 
     public static Enchantment register(String name, Enchantment enchantment) {
         return Registry.register(Registry.ENCHANTMENT, new Identifier(LostWorld.MOD_ID, name), enchantment);

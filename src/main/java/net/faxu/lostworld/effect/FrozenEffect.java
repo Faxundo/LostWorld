@@ -6,8 +6,6 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.random.Random;
 
 import java.util.UUID;
 
@@ -16,12 +14,23 @@ public class FrozenEffect extends StatusEffect {
         super(statusEffectCategory, color);
     }
 
-    public static final UUID FROZEN_UUID = MathHelper.randomUuid(Random.createLocal());
+    public static final UUID FROZEN_UUID = UUID.fromString("10db2c76-5dee-4634-b158-706467727b83");
 
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-        EntityAttributeModifier modifier = new EntityAttributeModifier(UUID.fromString("FROZEN_LOSTWORLD"),
-                "frozen", -1.0D, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
-        entity.getAttributes().getCustomInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED).addPersistentModifier(modifier);
+        if (!entity.world.isClient()) {
+            EntityAttributeInstance attributeInstance = entity.getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED);
+            if(attributeInstance != null) {
+                EntityAttributeModifier modifier = new EntityAttributeModifier(FROZEN_UUID, "FrozenLost",
+                        5.0D, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
+                attributeInstance.removeModifier(modifier);
+                attributeInstance.addTemporaryModifier(modifier);
+            }
+        }
+    }
+
+    @Override
+    public boolean canApplyUpdateEffect(int duration, int amplifier) {
+        return true;
     }
 }

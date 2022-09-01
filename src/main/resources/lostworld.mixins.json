@@ -4,7 +4,8 @@
   "package": "net.faxu.lostworld.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "ClubItemEnchantmentsMixin",
+    "AnimalEntityMixin",
+    "PlayerEntityMixin",
     "SlingshotEnchantmentsMixin"
   ],
   "client": [
